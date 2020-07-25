@@ -5,6 +5,7 @@ import webbrowser
 import json
 import spotipy.util as util
 from json.decoder import JSONDecodeError
+#from __builtin__ import any as b_any
 
 # get username from terminal
 username = sys.argv[1]
@@ -55,7 +56,7 @@ while True:
 
         #print(json.dumps(searchResults, sort_keys = True, indent=4))
         
-        if "indie pop" in genre:
+        if any("indie" in genre for genre in genre):
             print("yellow")
 
         if "pop" in genre:
