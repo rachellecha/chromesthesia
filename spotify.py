@@ -47,12 +47,33 @@ while True:
 
         searchResults = spotifyObject.search(artist, 1, 0, "artist")
 
-        genre = searchResults["artists"]["items"][0]
+        genre = searchResults["artists"]["items"][0]["genres"]
 
-        print(genre["genres"])
+        #print(type(genre))
+
+        print(genre)
 
         #print(json.dumps(searchResults, sort_keys = True, indent=4))
         
+        if "indie pop" in genre:
+            print("yellow")
+
+        if "pop" in genre:
+            print("pink")
+        
+        if "folk" in genre:
+            print("yellow")
+
+        if "rap" in genre:
+            print("black")
+
+        if "alternative r&b" in genre:
+            print("pink")
+        
+        if "pop punk" in genre:
+            print("blue")
+
+
 
 #end program
     if choice == "1":
