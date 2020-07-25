@@ -23,9 +23,8 @@ except:
 spotifyObject = spotipy.Spotify(auth=token)
 
 user = spotifyObject.current_user()
-print(json.dumps(user, sort_keys = True, indent=4))
-
 dispayName = user["display_name"]
+
 
 
 
