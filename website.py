@@ -25,8 +25,11 @@ def hi():
     try:
         token = util.prompt_for_user_token(username)
     except:
-        os.remove(".cache-{}".format(username))
-        token = util.prompt_for_user_token(username)
+        #os.remove(".cache-{}".format(username))
+        token = token = util.prompt_for_user_token(username, 
+            client_id='f572cf52d72b4e44ac55d6c14ba6f74a', 
+            client_secret='18f76a14e1554ad69b2d51070a9a67eb', 
+            redirect_uri='https://google.com/')
 
     #create spotify object
     spotifyObject = spotipy.Spotify(auth=token)
