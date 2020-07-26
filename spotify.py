@@ -38,7 +38,7 @@ def colorPicker(input):
 
         #print(type(genre))
 
-        #print(genre)
+    print(genre)
 
         #print(json.dumps(searchResults, sort_keys = True, indent=4))
 

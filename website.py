@@ -59,16 +59,16 @@ def hi():
     if "pop" in genre:
         color = "pink"
         
-    if "folk" in genre:
+    if any("folk" in genre for genre in genre):
         color = "yellow"
 
-    if "rap" in genre:
+    if any("rap" in genre for genre in genre):
         color = "black"
 
-    if "alternative r&b" in genre:
+    if any("r&b" in genre for genre in genre):
         color = "pink"
         
-    if "pop punk" in genre:
+    if any("punk" in genre for genre in genre):
         color = "blue"
 
     #input = input("Song Name? ")
