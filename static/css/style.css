@@ -3,24 +3,47 @@
     float: center;
     padding: 10px;
     margin-top: 200px;
-    margin-left: 525px;
+    margin-left: 429px;
     font-size: 17px;
+
+    width: 500px;
+
+    text-align: left;  
     
+}
+
+.text {
+    position: absolute;
+    width: 728px;
+    height: 49px;
+    left: 356px;
+    top: 222px;
+    
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    
+    color: #000000;
 }
 
 .about {
     
     position: absolute;
-    width: 1000px;
-    height: 200px;
-    margin-left: 140px;
+    width: 1028px;
+    height: 190px;
+    left: 206px;
+    top: 512px
     
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
-    
     line-height: 56px;
     text-align: center;
-
+    
+    color: #000000;
 }

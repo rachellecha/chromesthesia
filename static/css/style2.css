@@ -1,9 +1,52 @@
 .decor {
 	
-	border: 10px solid black;
-	text-align:center;
-	font-size:50px;
+	position: absolute;
+	width: 646px;
+	height: 129px;
+	left: 397px;
+	top: 152px;
 	
-	}
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
 	
+	color: #000000;
 	
+}
+	
+.color{
+	position: absolute;
+	width: 581px;
+	height: 68px;
+	left: 429px;
+	top: 313px;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 72px;
+	line-height: 84px;
+	text-align: center;
+	
+	color: #000000;
+}	
+
+.form{
+	position: absolute;
+	width: 556px;
+	height: 28px;
+	left: 454px;
+	top: 590px;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	
+	color: #000000;
+}

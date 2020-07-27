@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chromesthesia</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!--<link rel="stylesheet" href="/static/css/style.css">-->
 
 </head>
 <body style="background-color:#FED982;">
 		
-    <img src="{{url_for('static', filename='chromesthesia.png')}}" />
+    <img src="{{url_for('static', filename='chromesthesia.png')}}"/>
+    <!--<img src="/static/chromesthesia.png"/>-->
+
+    <div class="text">
+        <p>enter your favorite song and we'll tell you what color it is!</p>
+    </div>
+    
     
     <div class="nav">
+
+
         <form action="/hi">
         <input type="text" placeholder="Song Name..." name="color">
         <button>Search</button>
         </form>
+
     </div>
     
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdc7I722I51mcxBiKB72EhNeLBb06bNIrdJG2wug2c7jmnKNQ/viewform"><p style="text-align:center">Think the color is wrong? Click here to give your input</p></a>
     
     <div class = "about">
     
