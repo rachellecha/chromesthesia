@@ -25,4 +25,4 @@ I learned how to use the new library Spotipy to use the Spotify API in python. I
 ## What's next for chromesthesia
 As mentioned in the accomplishments, we look to spread the website and get as much feedback to keep the data accurate. The survey they take helps us analyze more sound-color connections and give more realistic results.
 
-# click here to test it out! https://chromesthesia.uk.r.appspot.com/
+# click here to test it out! https://20200728t004246-dot-chromesthesia.uk.r.appspot.com/
