@@ -9,19 +9,21 @@ from json.decoder import JSONDecodeError
 
 app = Flask(__name__)
 
+#main home page
+
 @app.route("/")
 def home():
     return render_template("index.html")
 
-@app.route("/hi")
-def hi():
-    # get username from terminal
+#result page
+
+@app.route("/result")
+def result():
+
+    # my Spotify username
     username = "12171678313"
 
-    #12171678313
-
-    #Erase cache and prompt for user permission
-
+    #get user permissions from Spotify 
     try:
         token = util.prompt_for_user_token(username)
     except:
@@ -31,28 +33,25 @@ def hi():
     #create spotify object
     spotifyObject = spotipy.Spotify(auth=token)
 
-    #user = spotifyObject.current_user()
-    #displayName = user["display_name"]
 
     #Search for song
-    #def colorPicker(input):
 
-    input = request.args["color"]
+    #user input song into search bar
+    input = request.args["song"]
 
+    #uses Spotify API search function to get information about the track (song)
     song = spotifyObject.search(input, 1, 0, "track")
 
+    #use this to get artist
     artist = song["tracks"]["items"][0]["artists"][0]["name"]
 
     searchResults = spotifyObject.search(artist, 1, 0, "artist")
 
+    #I chose genre as the differentiator for songs to represent different colors.
+    #then get genre from this because Spotify doesn't classify each song to have a specific genre
     genre = searchResults["artists"]["items"][0]["genres"]
 
-    #print(type(genre))
-
-    #print(genre)
-
-    #print(json.dumps(searchResults, sort_keys = True, indent=4))
-
+    #takes the genre of the song and returns the color that song is. This will become more nuanced over time
     if any("indie" in genre for genre in genre):
         color = "yellow"
 
@@ -70,14 +69,9 @@ def hi():
         
     if any("punk" in genre for genre in genre):
         color = "blue"
-
-    #input = input("Song Name? ")
-
-    #colorPicker(input)
-
-    # print(json.dumps(VARIABLE, sort_keys = True, indent=4))
-
-    return render_template("hi.html", color=color)
+    
+    #returns the result in a new page
+    return render_template("result.html", color=color)
 
 
 if __name__ == "__main__":
