@@ -15,6 +15,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.errorhandler(500)
+def internal_server_error():
+    return render_template("error.html")
+
 #result page
 
 @app.route("/result")
