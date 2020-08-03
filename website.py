@@ -15,9 +15,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.errorhandler(500)
-def internal_server_error():
-    return render_template("error.html")
+
 
 #result page
 
@@ -74,9 +72,15 @@ def result():
     if any("punk" in genre for genre in genre):
         color = "blue"
     
-    #returns the result in a new page
-    return render_template("result.html", color=color)
+    #returns the result in a new page or sends them to error page
+    try:    
+        return render_template("hi.html", color=color)
+    except Exception as e:
+        return render_template("error.html", error = str(e))
 
+@app.errorhandler(500)
+def internal_server_error():
+    return render_template("error.html")
 
 if __name__ == "__main__":
     app.run()
