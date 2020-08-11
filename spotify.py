@@ -16,8 +16,8 @@ username = "12171678313"
 try:
     token = util.prompt_for_user_token(username)
 except:
-    os.remove(".cache-{}".format(username))
-    token = util.prompt_for_user_token(username)
+    #os.remove(".cache-{}".format(username))
+    token = token = util.prompt_for_user_token(username, client_id='f572cf52d72b4e44ac55d6c14ba6f74a', client_secret='18f76a14e1554ad69b2d51070a9a67eb', redirect_uri='https://google.com/')
 
 #create spotify object
 spotifyObject = spotipy.Spotify(auth=token)
@@ -38,9 +38,9 @@ def colorPicker(input):
 
         #print(type(genre))
 
-    print(genre)
+    #print(genre)
 
-        #print(json.dumps(searchResults, sort_keys = True, indent=4))
+    print(json.dumps(song, sort_keys = True, indent=4))
 
     if any("indie" in genre for genre in genre):
         print("yellow")
