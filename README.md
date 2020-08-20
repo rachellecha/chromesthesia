@@ -25,4 +25,4 @@ I learned how to use the new library Spotipy to use the Spotify API in python. I
 ## What's next for chromesthesia
 I need to collect more data to cover all songs and all genres. Next steps are to create a form to collect more data and disperse it to the synesthetic community and possibly create a ML model to get more accurate outcomes.
 
-# click here to test it out! https://chromesthesia.uk.r.appspot.com/
+# click here to test it out! https://chromesthesiaa.herokuapp.com/
