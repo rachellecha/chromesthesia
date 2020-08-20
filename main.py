@@ -132,10 +132,6 @@ def hi():
     except Exception as e:
         return render_template("error.html", error = str(e))
 
-@app.errorhandler(500)
-def internal_server_error():
-    return render_template("error.html")
-
 if __name__ == "__main__":
     app.run(debug = True)
 
