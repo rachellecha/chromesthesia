@@ -23,6 +23,6 @@ We are proud we were able to get this website up and running. We are happy we ma
 I learned how to use the new library Spotipy to use the Spotify API in python. I also learned Flask to connect the HTML/CSS frontend to the Python backend.
 
 ## What's next for chromesthesia
-Next steps are to create a form to collect more data and disperse it to the synesthetic community and create a more accurate ML algorithm.
+Next steps are to create a form to collect more data and disperse it to the synesthetic community and create a more accurate ML algorithm. I would also like to create a better UX/UI experience and make it optimized for mobile!
 
 # click here to test it out! https://chromesthesiaa.herokuapp.com/
