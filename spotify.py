@@ -75,7 +75,7 @@ for index, row in df.iterrows():
     l7.append(searchResults[0]["speechiness"])
     l8.append(searchResults[0]["tempo"])
     
-print(df.head())
+#print(df.head())
 
 df = df.assign(acousticness = l1 , danceability = l2, energy = l3, instrumentalness = l4, liveness = l5, loudness = l6, speechiness = l7, tempo = l8)
 
@@ -88,7 +88,7 @@ X = df[cols] #features
 y = df["Color"] #target/outcome
 
 #90/10 split because I have very little data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=1)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
 
 clf = DecisionTreeClassifier()
 
@@ -97,7 +97,7 @@ clf = clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 
 #check accuracy and print out decision tree
-#print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Accuracy:", accuracy_score(y_test, y_pred))
 #r = export_text(clf, feature_names=cols)
 #print(r)
 

@@ -98,7 +98,7 @@ def hi():
     y = df["Color"] #target/outcome
 
     #90/10 split because I have very little data
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=1)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
 
     clf = DecisionTreeClassifier()
 
