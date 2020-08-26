@@ -1,9 +1,7 @@
 .text{
-    position: absolute;
-    width: 1068px;
-    height: 110px;
-    left: 152px;
-    top: 136px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 
     font-family: Roboto;
     font-style: normal;
@@ -16,11 +14,9 @@
 }
 
 .form{
-    position: absolute;
-width: 883px;
-height: 63px;
-left: 244px;
-top: 387px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;s
 
 font-family: Roboto;
 font-style: normal;
