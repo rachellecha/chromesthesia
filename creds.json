@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chromesthesia-sheets",
+  "private_key_id": "51447e358d329a29b8f2c068c07b8ff1b21ee137",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbCu1UKyZR9/py\nauQ/AcLUAPT4IjwsRsBRBJN7d6PGYoKN6uEdrpt8v1E5Jf6IuEARl4a/2S8E/3Ai\ngV0m9Ej5XYiBqY/RC0PnPktmMUVotQDbLYCkHtC8iaiYZdsjaJ6ry344tHN3f2I7\nXUgXIiyael9KGPQYTMzQky1bBTMcfm2iG5T05Z7RmiLzaUtlPQWxx7VzH8NoBdoO\nDrdTBP40JPtqeLkEVsDf7ip+f0bKi75G17JG6jN0Piubrqh4PGicrjA88Wg6dn+f\nqeG53Ck4oTylywGGP1FSa5patGOVCs8Kbqcf45mGW4TxVpY8m3DXaFak4v7bQuxE\nFmLU85s/AgMBAAECggEAAeKFTdGy4dWRjbpg611oVosJcnyx3s0T4UgBcktNygEs\nS/Q3DIPtAj5TcZmu+rv26h0D3B4sfdEqTESJh+cLwuKBdAcAvBqmTOAaw8G1Iqnv\nXJkcZ2O5b0bV2mLN/f4vl1mPkjKjUSKSIAAPbjfD8l+lb1NDwyge94j46oeIg1qI\nud196XnX/mwsZgAudPV/L3mDDiMTZok13DbHMgef2AV7GKTPbiztA720FWvkiQPJ\n72U+I8+yYgUjaYeXgoyPMM2Q+x8WNHdCnpkRtu+9gK/g3rQe96VN22+nzL1Qc0WT\nETcze09KioINffPxZWUDb6nxbjN5a4C2g0i51W8LMQKBgQDvG1ZdajcRv8ZcxXAv\n75H8LXtcOU7Py4XJr64jRCwb5iPxSc3otq+alcxeUSS4qYP4WLUUNAipQRIPr6cu\nOO8J9uSmtifZdZq+WRjwg8sxHAXTnY5F/fD8HbimPLDH0DIjtzmjLJTGJhI3AYqP\nW8YqNZDnHL5Now6DfefsaeOqmQKBgQDqhLIJ5P6vxO1iIAm46nXpwN02Dq9h6PeD\nQ+RbnYWnvvhH8QS3E1vyvn9WR+g050kH6MtFE01ibzQ3qB9Ac6lmJZcqvV0oAYea\nMZXmjd9Q8exVg+bzxIf4NgPc5LYjNOgpxzBtKwGdjeRr0ItND2459hqM62oNJB4G\ndKf8sAmzlwKBgGoEEv0EVTp3b3o+yIlYjb/kYqf3eOxFbyKH1Iwqc+xC1HjtonCm\nX6II/T5sd/2wm6UHn/I/R//TrDBsT5H9CG/Amo0Ygv62WFBBrP8nUHaL2EGFwElk\nWO9QNkju6+sMcs7HNLUW1TguNTFSa584r9qTOZZfdjlyLMM8lhKKuLkxAoGAB87f\nNqEfMa720FuMt1FnF59KPjCC+lmNVBuAkORPvOQI1CxcIdRNLWnWR4MhYhGJRvAj\nRGt+GhblwCyizbyMGVCLFes0HM7gOuwHt6NlmgZT/gzkNZ2HgWYa/tHGlql+SVXO\ncPQLm7lLr6ND4A7xdpCRFbwIzeMz9LcRmMIrsIUCgYEAqn0t+nZWi4YgG4WjC9US\n9gkA2iDFKazTbseQwFMJIpzVqxb6wgcEam0cxF/TprB7EWxphcvSzm0EUCb6vxzq\nLwrfMv04DRhrCGMkYs/7Pp6TxMy2jrikDZSjZiBiEgihczaR749j4+fZ57MUjybW\nu92qHs4jIzoPOKqY84TepsE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cha-742@chromesthesia-sheets.iam.gserviceaccount.com",
+  "client_id": "105190201748893804275",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cha-742%40chromesthesia-sheets.iam.gserviceaccount.com"
+}
