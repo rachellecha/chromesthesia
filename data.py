@@ -32,14 +32,17 @@ gc = gspread.authorize(c)
 
 sh = gc.open("Chromesthesia").sheet1
 
-songsCol = sh.col_values(2)
-colorsCol = sh.col_values(15)
+#turn the sheets into a dataframe
 
 df = pd.DataFrame(sh.get_all_records())
 
+#only the song name and color
+
 df = df[["Song", "Color"]]
 
-cols = ["acousticness", "danceability", "energy", "instrumentalness", "liveness", "loudness", "speechiness", "tempo"]
+#cols = ["acousticness", "danceability", "energy", "instrumentalness", "liveness", "loudness", "speechiness", "tempo"]
+
+#add audio analysis values
 
 l1 = []
 l2 = []
@@ -63,4 +66,8 @@ for index, row in df.iterrows():
     l7.append(searchResults[0]["speechiness"])
     l8.append(searchResults[0]["tempo"])
 
+#put into dataframe 
 df = df.assign(acousticness = l1 , danceability = l2, energy = l3, instrumentalness = l4, liveness = l5, loudness = l6, speechiness = l7, tempo = l8)
+
+#make a csv
+df.to_csv("chromesthesia.csv")

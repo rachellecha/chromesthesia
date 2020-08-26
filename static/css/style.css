@@ -1,23 +1,25 @@
 .nav input[type=text] {
-		
-    float: center;
+
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
     padding: 10px;
-    margin-top: 200px;
-    margin-left: 429px;
     font-size: 17px;
 
-    width: 500px;
+    width: 45%;
 
-    text-align: left;  
+    margin: 0 auto;
+    display: block;
+
+    text-align: left; 
     
 }
 
 .text {
-    position: absolute;
-    width: 728px;
-    height: 49px;
-    left: 356px;
-    top: 222px;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
     
     
     font-family: Roboto;
@@ -32,11 +34,9 @@
 
 .about {
     
-    position: absolute;
-    width: 1028px;
-    height: 190px;
-    left: 206px;
-    top: 512px
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
     
     font-family: Roboto;
     font-style: normal;
