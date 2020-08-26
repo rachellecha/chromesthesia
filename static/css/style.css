@@ -1,4 +1,4 @@
-.nav input[type=text] {
+.nav {
 
     display: flex;
     flex-direction: horizontal;
@@ -13,6 +13,11 @@
 
     text-align: left; 
     
+}
+
+input{
+
+    [type=text]
 }
 
 .text {

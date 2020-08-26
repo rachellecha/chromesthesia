@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chromesthesia</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!--<link rel="stylesheet" href="/static/css/style.css">-->
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+    <link rel="stylesheet" href="/static/css/style.css">
 
 </head>
 <body style="background-color:#FED982;">
 		
-    <img src="{{url_for('static', filename='chromesthesia.png')}}"/>
-    <!--<img src="/static/chromesthesia.png"/>-->
+    <!--<img src="{{url_for('static', filename='chromesthesia.png')}}"/>-->
+    <img src="/static/chromesthesia.png"/>
 
     <div class="text">
         <p>enter your favorite song and we'll tell you what color it is!</p>
@@ -19,7 +19,6 @@
     
     
     <div class="nav">
-
 
         <form action="/hi">
         <input type="text" placeholder="Song Name..." name="color">
