@@ -3,26 +3,24 @@
 ## Have you ever wondered what sounds look like? Chromesthesia takes your favorite songs and tells you what color it is!
 
 ## Inspiration
-Chromesthesia or sound to color synesthesia is a relatively rare neurological synesthesia. The idea of watching music rather than listening to it sounded unique and made me (Rachelle) inquisitive about it. When I shared the idea with my teammate (Treasa) we instantly got on the same page and chose to create a website to give a normal person the experience of watching music rather than listening to it.
+Chromesthesia or sound to color synesthesia is a relatively rare neurological synesthesia. The idea of watching music rather than listening to it sounded unique and made me inquisitive about it. I chose to create a website to give a normal person the experience of hearing colors rather than listening to it.
 
 ## What it does
-The website Chromesthesia enables the user to search for a song and predicts the color associated with that song based on its genre just like how people with chromesthesia would see it. If you feel the color associated with the song didn’t seem connected you can take the short survey linked in the website so the changes can be made to the simulator.
+The website Chromesthesia enables the user to search for a song and predicts the color associated with that song based on a set of audio analysis features from the Spotify API such as tempo, danceability, acoustic ness, etc. Initial data on songs and their corresponding color was gather from synesthetes from various internet communities such as Reddit, TikTok, and Discord. I then used sklearn's Decision Tree Classifier as my machine learning algorithm. If you feel the color associated with the song didn't seem connected you can take the short survey linked in the website so I can make the model more accurate.
 
 ## How I built it
-We created the layout for our website on Figma and later hardcoded the website using HTML and CSS styles. We used Spotify’s API to link it with our code to make it our search engine to browse songs using Python. I then used sklearn and used the Decision Tree Classifier to run an algorithm based on the factors provided from Spotify's audio analysis. Later we flasked the Python code with the HTML/CSS website to make the website up and running.
+I created the layout for our website on Figma and later coded the website using HTML and CSS. I used Spotify's API and linked it with our code to make it our search engine to browse songs. To import the data, I used the Google Sheets API since all my information came from a Google Form. I then used sci-kit learn and used the Decision Tree Classifier to run an algorithm based on the factors provided by Spotify's audio analysis. I then used Flask to connect my front end and back end.
 
 ## Challenges I ran into
-Trying to get Spotify’s API as our search engine to browse songs was the most challenging part of our project. Once that was complete we were not sure on how compatible Python and HTML/CSS were and later came up with the idea of using Flask to combine the frontend and backend.
-
-Right now, our website doesn't take into account all genres listed in Spotify so some songs will run into error messages.
+The most challenging part was figuring out how to implement machine learning. I decided on a Decision Tree Classifier because I didn't have enough data for any of the other algorithms.
 
 ## Accomplishments that I'm proud of
-We are proud we were able to get this website up and running. We are happy we made this website with the future in mind so we can have a detailed idea of this synthesia.
+I am proud I was able to get the machine learning aspect of it to all click!
 
 ## What I learned
-I learned how to use the new library Spotipy to use the Spotify API in python. I also learned Flask to connect the HTML/CSS frontend to the Python backend.
+I learned how to use some new libraries and APIs such as spotipy (Spotify API), sci-kit learn, gspread (Google Sheets API). This was also my first time deploying a dynamic page and learned how to use Heroku.
 
 ## What's next for chromesthesia
-Next steps are to create a form to collect more data and disperse it to the synesthetic community and create a more accurate ML algorithm. I would also like to create a better UX/UI experience and make it optimized for mobile!
+Next steps are to collect more data and disperse it to the synesthetic community to create a more accurate ML algorithm. I would also like to create a better UX/UI experience by learning JavaScript!
 
 # click here to test it out! https://chromesthesiaa.herokuapp.com/
