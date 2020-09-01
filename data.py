@@ -4,6 +4,8 @@ import spotipy.util as util
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import spotipy
+from json.decoder import JSONDecodeError
+import json
 
 # get username from terminal
 username = "12171678313"
@@ -56,6 +58,7 @@ l8 = []
 for index, row in df.iterrows():
     song = spotifyObject.search(row["Song"], 1, 0, "track")
     trackURI = song["tracks"]["items"][0]["uri"]
+    print(json.dumps(trackURI, sort_keys = True, indent=4))
     searchResults = spotifyObject.audio_features(trackURI)
     l1.append(searchResults[0]["acousticness"])
     l2.append(searchResults[0]["danceability"])
@@ -65,6 +68,8 @@ for index, row in df.iterrows():
     l6.append(searchResults[0]["loudness"])
     l7.append(searchResults[0]["speechiness"])
     l8.append(searchResults[0]["tempo"])
+
+
 
 #put into dataframe 
 df = df.assign(acousticness = l1 , danceability = l2, energy = l3, instrumentalness = l4, liveness = l5, loudness = l6, speechiness = l7, tempo = l8)
